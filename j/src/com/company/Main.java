@@ -10,8 +10,9 @@ public class Main {
         System.out.print("Masukan Jumlah Deret Fibonacci ");
         int n = show.nextInt();
         long fib[] = new long[n];
+        long temp = 0;
 
-        fib[0] = 0;
+        fib[0] = 1;
         fib[1] = 1;
 
         for(int i = 2; i < n; i++) {
@@ -19,8 +20,10 @@ public class Main {
         }
 
         for (int i = 0; i < n; i++) {
-            System.out.print(fib[i] +  " ");
+            temp = temp+ fib[i];
         }
+        System.out.println(temp);
     }
+
     }
 
